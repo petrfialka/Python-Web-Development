@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "client"
+version = "0.1.0"
+description = ""
+authors = ["Petr Fialka <petr.fialka95@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+reflex = "^0.8.15"
+httpx = "^0.28.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
