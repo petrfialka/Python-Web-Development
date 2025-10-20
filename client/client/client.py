@@ -35,12 +35,18 @@ def index() -> rx.Component:
             rx.link(rx.text("Tag2"), href="https://google.com"),
             rx.link(rx.text("Tag3"), href="https://google.com"),
         ),
+        rx.divider(margin_top="20px", margin_bottom="20px"),
+        rx.vstack(
+            rx.link(rx.text("Article1"), href="https://google.com"),
+            rx.link(rx.text("Article2"), href="https://google.com"),
+            rx.link(rx.text("Article3"), href="https://google.com"),
+        )
     )
 
 def article() -> rx.Component:
     return rx.container(
         rx.heading(rx.State.id),
-        rx.heading("Titulek"),
+        rx.heading("Title"),
     )
 
 app = rx.App()
